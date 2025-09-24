@@ -24,12 +24,13 @@ Install them with:
 pip install numpy matplotlib scipy tqdm jupyter
 ```
 
-## Simulation Results
+## Punctual source and Gibbs phenomena
 
-The following animations show the acoustic wave propagation with PML absorbing boundaries:
+The following animations show the acoustic wave propagation using PSTD, first uses a punctual source, where is possible to see the effect of the Gibbs phenomena spreading the signal.
+The second animation is a smoothed source, where the source is occupying a 3x3 region multiplied by a gaussian kernel like.
 
-### Example 1: Wave propagation in a homogeneous medium
-![Homogeneous Medium](media/punctual_source.gif)
+### Wave propagation in a homogeneous medium with a punctual source
+![Punctual Source](media/punctual_source.gif)
 
-### Example 2: Wave propagation with a velocity anomaly
-![Velocity Anomaly](media/smoothed_source.gif)
+### Wave propagation in a homogeneous medium with a smoothed source
+![Smoothed Source](media/smoothed_source.gif)
