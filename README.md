@@ -56,3 +56,9 @@ In PSTD simulations, spatial derivatives are computed via FFT, which assumes per
 
 In the case of a **nonhomogeneous medium** with velocities ranging from 1500 m/s to 4000 m/s, two animations illustrate the impact of boundary conditions. The first animation (without PML) clearly shows the **wraparound effect**, as waves reaching the boundaries reappear on the opposite side due to FFT periodicity. In contrast, the second animation (with PML) demonstrates how the absorbing layers suppress this artifact, allowing waves to exit the domain naturally.
 
+## Large contrasts in material properties
+
+As noted in the paper: *"large contrasts in material properties, little Gibbs phenomenon is observed."* Using a high source gain (`gain = 10e3`) and a interface from 4000 m/s to 300 m/s makes this subtle effect visible.
+
+### Little Gibbs phenomenon in a nonhomogeneous medium with PML
+![Smoothed Source](media/pml_effect.gif)
