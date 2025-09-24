@@ -29,7 +29,7 @@ pip install numpy matplotlib scipy tqdm jupyter
 The following animations show the acoustic wave propagation with PML absorbing boundaries:
 
 ### Example 1: Wave propagation in a homogeneous medium
-![Homogeneous Medium](media/homogeneous.gif)
+![Homogeneous Medium](media/punctual_source.gif)
 
 ### Example 2: Wave propagation with a velocity anomaly
-![Velocity Anomaly](media/anomaly.gif)
+![Velocity Anomaly](media/smoothed_source.gif)
