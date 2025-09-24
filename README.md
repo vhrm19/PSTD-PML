@@ -44,4 +44,15 @@ The second animation is a smoothed source, where the source is occupying a 3x3 r
 ### Wave propagation in a homogeneous medium with a smoothed source
 ![Smoothed Source](media/smoothed_source.gif)
 
+## Wraparound effect and PML
+
+In PSTD simulations, spatial derivatives are computed via FFT, which assumes periodic boundaries. This causes the **wraparound effect**, where waves exiting one side of the grid reappear on the opposite side, producing non-physical artifacts. To avoid this, **Perfectly Matched Layers (PML)** are used at the domain edges, absorbing outgoing energy and effectively suppressing the wraparound caused by FFT periodicity.
+
+### Wave propagation in a nonhomogeneous medium without PML
+![Punctual Source](media/wraparound_effect.gif)
+
+### Wave propagation in a nonhomogeneous medium with PML
+![Smoothed Source](media/pml_effect.gif)
+
+In the case of a **nonhomogeneous medium** with velocities ranging from 1500 m/s to 4000 m/s, two animations illustrate the impact of boundary conditions. The first animation (without PML) clearly shows the **wraparound effect**, as waves reaching the boundaries reappear on the opposite side due to FFT periodicity. In contrast, the second animation (with PML) demonstrates how the absorbing layers suppress this artifact, allowing waves to exit the domain naturally.
 
