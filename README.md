@@ -22,3 +22,14 @@ The notebook requires the following Python packages:
 Install them with:
 ```bash
 pip install numpy matplotlib scipy tqdm jupyter
+```
+
+## Simulation Results
+
+The following animations show the acoustic wave propagation with PML absorbing boundaries:
+
+### Example 1: Wave propagation in a homogeneous medium
+![Homogeneous Medium](media/homogeneous.gif)
+
+### Example 2: Wave propagation with a velocity anomaly
+![Velocity Anomaly](media/anomaly.gif)
