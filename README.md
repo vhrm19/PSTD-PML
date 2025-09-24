@@ -4,6 +4,8 @@ This repository contains a Python implementation of a **2D acoustic wave simulat
 Based in the paper:
 Qing Huo Liu, "The pseudospectral time-domain (PSTD) algorithm for acoustic waves in absorptive media," in IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control, vol. 45, no. 4, pp. 1044-1055, July 1998, doi: 10.1109/58.710587.
 
+Google Colab link to the code: https://colab.research.google.com/drive/1w0qwjd1qCvRdQHMrSem2IgqIZ8S947Nv?usp=sharing
+
 ## Advantages of PSTD over FDTD according to the author of the paper:
 - **High spatial accuracy**: infinite-order derivatives via FFT (vs. second-order in FDTD).  
 - **Fewer grid points**: only 2 points per wavelength needed (FDTD requires 10–20).  
