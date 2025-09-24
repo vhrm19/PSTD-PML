@@ -61,4 +61,4 @@ In the case of a **nonhomogeneous medium** with velocities ranging from 1500 m/s
 As noted in the paper: *"large contrasts in material properties, little Gibbs phenomenon is observed."* Using a high source gain (`gain = 10e3`) and a interface from 4000 m/s to 300 m/s makes this subtle effect visible.
 
 ### Little Gibbs phenomenon in a nonhomogeneous medium with PML
-![Smoothed Source](media/pml_effect.gif)
+![Gibbs Interface](media/gibbs.gif)
